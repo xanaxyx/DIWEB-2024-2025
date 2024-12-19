@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flotantes</title>
+    <style>
+        main {
+            width: 800px;
+            height: 600px;
+            background-color: pink;
+        }
+
+        p {
+            width: 260px;
+            height: 100px;
+            background-color: aqua;
+            float: right;
+            /*Probar con right*/
+            margin-left: 4px;
+            border: 1px solid blue;
+        }
+
+        p:nth-of-type(2) {
+            box-shadow: 2px
+                /*es x*/
+                2px
+                /*es (y)*/
+                10px
+                /*es el disfuminado*/
+            ;
+            clear: right;
+            /*Probar con left*/
+            
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <p>Párrafo 1</p>
+        <p>Párrafo 2</p>
+        <p>Párrafo 3</p>
+    </main>
+</body>
+
+</html>

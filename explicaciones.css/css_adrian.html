@@ -1,0 +1,52 @@
+<!-- Ejemplo_01_SelectoresBasicos.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            /*Para cambiar el color de la letra*/
+            color: red;
+            /*Para cambiar el tamaño de la letra*/
+            font-size: 20px;
+            /*Para cambiar la fuente(estilo) de la letra*/
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /*Selector Base*/
+        span{
+            background-color: aquamarine;
+        }
+        /*Selector Descendente*/
+        p a{
+            color: green;
+        }
+        p a span{
+            color: blueviolet;
+        }
+        p > a{
+            font-weight: bold;
+        }
+        /*Hace un recuadro, en este caso a Enlace*/
+        p > span + a{
+            border: 2px solid red;
+        }
+
+    </style>
+</head>
+<h1>CSS
+
+</h1>
+<body>
+    <p>Párrafo 1</p>
+    <p>Párrafo 2</p>
+    <p>Párrafo 3 con <a href="#">enlace</a></p>
+    <p>Párrafo 4 <span>con <a href="#">enlace</a></span></p>
+    <p>Párrafo 5 <span>con</span> <a href="#"> enlace</a></p>
+
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas CSS</title>
+    <style>
+    nav {
+            text-align: center;
+        }
+
+        ul > li {
+            list-style-type: none;
+            display: inline-block;
+            margin-right: 15px;
+        }
+
+        ul > li > a {
+            text-decoration: none;
+        }
+
+        ul>li>a> span {
+            text-transform: uppercase;
+            color: #242424;
+        }
+        ol > li {
+            list-style-type: lower-greek;
+            list-style-image: url(joker_emojic.jpeg);
+            list-style-position: inside;
+
+        }
+    </style>
+</head>
+<body>
+    <nav>
+    <ul>
+        <li><a href="#"><span>Moda mujer</span></a></li>
+        <li><a href="#"><span>Deportes</span></a></li>
+        <li><a href="#"><span>Electrónica</span></a></li>
+        <li><a href="#"><span>Hogar</span></a></li>
+        <li><a href="#"><span>Supermercado</span></a></li>
+    </ul>
+</nav>
+<section>
+    <ol>
+        <li>Recogida gratuita</li>
+        <li>Envio a domicilio</li>
+        <li>Devolución gratis</li>
+        <li>Click & Car</li>
+    </ol>
+</section>
+</body>
+</html>

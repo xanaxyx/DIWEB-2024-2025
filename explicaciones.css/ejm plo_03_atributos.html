@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*Se pone el formulario de arriba solo de ese color porq este es get y el otro post*/
+        form[method="get"]
+        {
+            background-color: aquamarine;
+        }
+        form[method="post"]
+        {
+            background-color: pink;
+        }
+        input[value] {
+            border: 2px solid blue;
+        }
+input[name="azul"] + input[value="OK"] {
+    color: red;
+}
+form {
+    width: 300px;
+    color: red;
+}
+
+    </style>
+</head>
+
+<body>
+    <form action="#" method="get">
+        <fieldset>
+            <legend>Añadir a la cesta</legend>
+            <label for="azul">Café Azul</label><br>
+            <input type="number" name="azul" id="azul">
+            <input type="submit" value="OK">
+        </fieldset>
+    </form>
+    <fieldset>
+        <legend>Añadir a la cesta</legend>
+        <form action="#" method="post">
+            <label for="rojo">Café Rojo</label><br>
+            <input type="number" name="rojo" id="rojo"><br>
+            <input type="submit" value="OK">
+    </fieldset>
+    </form>
+</body>
+
+</html>

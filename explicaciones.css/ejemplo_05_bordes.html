@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bordes</title>
+    <style>
+        p {
+            width: 20%;
+            height: 30px;
+            background: cyan;
+            color: white;
+            border: 1px solid black;
+        }
+
+        article p:first-child {
+            border-width: 5px;
+        }
+
+        article p:nth-child(2) {
+            border-color: blue;
+            border-style: dotted; /*Punteado*/
+            border-style:dashed ; /*Rayitas*/
+            border-style: double; /*Doble Rayas*/
+        }
+        article p:last-child {
+            border-style: groove; /*Grabado*/
+            border-style: ridge;/*Relieve*/
+            border-style: outset; /*Sombra*/
+        }
+    </style>
+</head>
+
+<body>
+    <article>
+        <p>Párrafo 1</p>
+        <p>Párrafo 2</p>
+        <p>Párrafo 3</p>
+        <p>Párrafo 4</p>
+    </article>
+    <section>
+        <p>Párrafo 1</p>
+        <p>Párrafo 2</p>
+        <p>Párrafo 3</p>
+        <p>Párrafo 4</p>
+    </section>
+
+
+</body>
+
+</html>

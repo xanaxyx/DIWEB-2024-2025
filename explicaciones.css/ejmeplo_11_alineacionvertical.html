@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alineacion vertical</title>
+    <style>
+        p{
+            border: 1px solid blue;
+            height: 100px;
+            width: 60%;
+        }
+        p:nth-of-type(2) span {
+            vertical-align:top;
+        }
+        img {
+            width: 90px;
+        }
+        p:nth-of-type(3) span{
+            vertical-align: super;
+        }
+        p:nth-of-type(4) span {
+            vertical-align: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <p><img src="joker_emojic.jpeg" alt="#"> Baseline</p>
+    <p><img src="joker_emojic.jpeg" alt="#"> <span>Top</span></p>
+    <p><img src="joker_emojic.jpeg" alt="#"><span>Super</span></p>
+    <p><img src="joker_emojic.jpeg" alt="#"><span>+1em</span></p>
+</body>
+</html>
